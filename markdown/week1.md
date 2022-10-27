@@ -369,7 +369,7 @@ ${\theta_{j}}:={\theta_{j}}-\alpha \frac{\partial }{\partial {\theta_{j}}}J\left
 
 ![](../images/5eb364cc5732428c695e2aa90138b01b.png)
 
-对我们之前的线性回归问题运用梯度下降法，关键在于求出代价函数的导数，即：
+对我们之前的线性回归问题运用梯度下降法，关键在于求出==代价函数的导数==，即：
 
 $\frac{\partial }{\partial {{\theta }_{j}}}J({{\theta }_{0}},{{\theta }_{1}})=\frac{\partial }{\partial {{\theta }_{j}}}\frac{1}{2m}{{\sum\limits_{i=1}^{m}{\left( {{h}_{\theta }}({{x}^{(i)}})-{{y}^{(i)}} \right)}}^{2}}$
 
