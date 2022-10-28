@@ -97,7 +97,7 @@ $a_1$, $a_2$, $a_3$是中间单元，它们负责将数据进行处理，然后�
 
 ![](../images/8293711e1d23414d0a03f6878f5a2d91.jpg)
 
-下面引入一些标记法来帮助描述模型：
+下面引入一些标记法来帮助描述模型：==激活单元层数==
 $a_{i}^{\left( j \right)}$ 代表第$j$ 层的第 $i$ 个激活单元。${{\theta }^{\left( j \right)}}$代表从第 $j$ 层映射到第$ j+1$ 层时的权重的矩阵，例如${{\theta }^{\left( 1 \right)}}$代表从第一层映射到第二层的权重的矩阵。其尺寸为：以第 $j+1$层的激活单元数量为行数，以第 $j$ 层的激活单元数加一为列数的矩阵。例如：上图所示的神经网络中${{\theta }^{\left( 1 \right)}}$的尺寸为 3*4。
 
 对于上图所示的模型，激活单元和输出分别表达为：
@@ -111,7 +111,7 @@ ${{h}_{\Theta }}(x)=g(\Theta _{10}^{(2)}a_{0}^{(2)}+\Theta _{11}^{(2)}a_{1}^{(2)
 
 我们可以知道：每一个$a$都是由上一层所有的$x$和每一个$x$所对应的决定的。
 
-（我们把这样从左到右的算法称为前向传播算法( **FORWARD PROPAGATION** )）
+（我们把这样从左到右的算法称为==前向传播算法==( **FORWARD PROPAGATION** )）
 
 把$x$, $\theta$, $a$ 分别用矩阵表示：
 
@@ -209,12 +209,12 @@ ${{z}^{\left( 2 \right)}}={{\Theta }^{\left( 1 \right)}}\times {{X}^{T}} $
 
 ![](../images/1fd3017dfa554642a5e1805d6d2b1fa6.png)
 
-我们可以利用神经元来组合成更为复杂的神经网络以实现更复杂的运算。例如我们要实现**XNOR** 功能（输入的两个值必须一样，均为1或均为0），即 $\text{XNOR}=( \text{x}_1\, \text{AND}\, \text{x}_2 )\, \text{OR} \left( \left( \text{NOT}\, \text{x}_1 \right) \text{AND} \left( \text{NOT}\, \text{x}_2 \right) \right)​$
-首先构造一个能表达$\left( \text{NOT}\, \text{x}_1 \right) \text{AND} \left( \text{NOT}\, \text{x}_2 \right)​$部分的神经元：
+我们可以利用神经元来组合成更为复杂的神经网络以实现更复杂的运算。例如我们要实现**XNOR** 功能（输入的两个值必须一样，均为1或均为0），即 $\text{XNOR}=( \text{x}_1\, \text{AND}\, \text{x}_2 )\, \text{OR} \left( \left( \text{NOT}\, \text{x}_1 \right) \text{AND} \left( \text{NOT}\, \text{x}_2 \right) \right)$
+首先构造一个能表达$\left( \text{NOT}\, \text{x}_1 \right) \text{AND} \left( \text{NOT}\, \text{x}_2 \right)$部分的神经元：
 
 ![](../images/4c44e69a12b48efdff2fe92a0a698768.png)
 
-然后将表示 **AND** 的神经元和表示$\left( \text{NOT}\, \text{x}_1 \right) \text{AND} \left( \text{NOT}\, \text{x}_2 \right)​$的神经元以及表示 OR 的神经元进行组合：
+然后将表示 **AND** 的神经元和表示$\left( \text{NOT}\, \text{x}_1 \right) \text{AND} \left( \text{NOT}\, \text{x}_2 \right)$的神经元以及表示 OR 的神经元进行组合：
 
 ![](../images/432c906875baca78031bd337fe0c8682.png)
 
