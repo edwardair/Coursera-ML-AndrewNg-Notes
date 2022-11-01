@@ -162,7 +162,7 @@ ${{z}^{\left( 2 \right)}}={{\Theta }^{\left( 1 \right)}}\times {{X}^{T}} $
 
 神经网络中，单层神经元（无中间层）的计算可用来表示逻辑运算，比如逻辑与(**AND**)、逻辑或(**OR**)。
 
-举例说明：逻辑与(**AND**)；下图中左半部分是神经网络的设计与**output**层表达式，右边上部分是**sigmod**函数，下半部分是真值表。
+举例说明：逻辑与(**==AND==**)；下图中左半部分是神经网络的设计与**output**层表达式，右边上部分是**sigmod**函数，下半部分是真值表。
 
 我们可以用这样的一个神经网络表示**AND** 函数：
 
@@ -185,7 +185,7 @@ ${{z}^{\left( 2 \right)}}={{\Theta }^{\left( 1 \right)}}\times {{X}^{T}} $
 
 这就是**AND**函数。
 
-接下来再介绍一个**OR**函数：
+接下来再介绍一个**==OR==**函数：
 
 ![](../images/aa27671f7a3a16545a28f356a2fb98c0.png)
 
@@ -209,7 +209,7 @@ ${{z}^{\left( 2 \right)}}={{\Theta }^{\left( 1 \right)}}\times {{X}^{T}} $
 
 ![](../images/1fd3017dfa554642a5e1805d6d2b1fa6.png)
 
-我们可以利用神经元来组合成更为复杂的神经网络以实现更复杂的运算。例如我们要实现**XNOR** 功能（输入的两个值必须一样，均为1或均为0），即 $\text{XNOR}=( \text{x}_1\, \text{AND}\, \text{x}_2 )\, \text{OR} \left( \left( \text{NOT}\, \text{x}_1 \right) \text{AND} \left( \text{NOT}\, \text{x}_2 \right) \right)$
+我们可以利用神经元来组合成更为复杂的神经网络以实现更复杂的运算。例如我们要实现**==XNOR==** 功能（输入的两个值必须一样，均为1或均为0），即 $\text{XNOR}=( \text{x}_1\, \text{AND}\, \text{x}_2 )\, \text{OR} \left( \left( \text{NOT}\, \text{x}_1 \right) \text{AND} \left( \text{NOT}\, \text{x}_2 \right) \right)$
 首先构造一个能表达$\left( \text{NOT}\, \text{x}_1 \right) \text{AND} \left( \text{NOT}\, \text{x}_2 \right)$部分的神经元：
 
 ![](../images/4c44e69a12b48efdff2fe92a0a698768.png)
