@@ -286,12 +286,9 @@ $J_{test}(\theta)=\frac{1}{2m_{test}}\sum_\limits{i=1}^{m_{test}}(h_{\theta}(x^{
 	
 
 1. **正确肯定**（**True Positive,TP**）：预测为真，实际为真
-
-2.**正确否定**（**True Negative,TN**）：预测为假，实际为假
-	
-3.**错误肯定**（**False Positive,FP**）：预测为真，实际为假
-	
-4.**错误否定**（**False Negative,FN**）：预测为假，实际为真
+2. **正确否定**（**True Negative,TN**）：预测为假，实际为假
+3. **错误肯定**（**False Positive,FP**）：预测为真，实际为假
+4. **错误否定**（**False Negative,FN**）：预测为假，实际为真
 
 则：查准率=**TP/(TP+FP)**。例，在所有我们预测有恶性肿瘤的病人中，实际上有恶性肿瘤的病人的百分比，越高越好。
 	

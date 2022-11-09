@@ -188,7 +188,7 @@ $$ \frac{\partial}{\partial\theta_1}=\frac{J\left(\theta_1+\varepsilon_1,\theta_
 
 我们真正要决定的是隐藏层的层数和每个中间层的单元数。
 
-训练神经网络：
+##### ==训练神经网络==：
 
 1. 参数的随机初始化
 
